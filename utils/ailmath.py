@@ -37,10 +37,10 @@ class MagTools:
     return int(round(dur * math.exp(1), 0) * 5)
 
   def heal_per_post(self, stren=1, speed=1) -> int:
-    return int((speed + stren * 3))
+    return int((speed*2 + stren * 3))
 
   def heal(self, stren=1, speed=1) -> int:
     return int(round((speed + stren * 4) * math.exp(1), 0))
 
   def poison(self, stren=1, speed=1) -> int:
-    return int((speed + stren * 4))
+    return int((speed*2 + stren * 4))
